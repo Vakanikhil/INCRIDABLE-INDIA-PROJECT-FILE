@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Sites in Delhi</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background-color: white;
+            color: #333;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: green;
+            color: white;
+            padding: 15px 20px;
+            border-radius: 8px;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 24px;
+        }
+
+        button {
+            background-color: yellow;
+            border: none;
+            color: white;
+            padding: 10px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button:hover {
+            background-color: orange;
+        }
+
+        .category {
+            margin: 30px 0;
+        }
+
+        .category h2 {
+            font-size: 22px;
+            color: green;
+            border-bottom: 2px solid green;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        .location {
+            background-color: white;
+            border: 1px solid white;
+            border-radius: 8px;
+            padding: 15px;
+            margin: 10px 0;
+            display: flex;
+            align-items: flex-start;
+            transition: box-shadow 0.3s;
+        }
+
+        .location:hover {
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .location img {
+            width: 150px;
+            height: 100px;
+            border-radius: 8px;
+            margin-right: 15px;
+            object-fit: cover;
+        }
+
+        footer {
+            background-color: green;
+            color: white;
+            padding: 15px;
+            text-align: center;
+            border-radius: 8px;
+            margin-top: 30px;
+        }
+
+        footer ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 10px 0 0;
+        }
+
+        footer ul li {
+            margin: 5px 0;
+        }
+
+        .book-now {
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .book-now button {
+            font-size: 18px;
+            padding: 12px 20px;
+            background-color: green;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .book-now button:hover {
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Historical Sites in Delhi</h1>
+        <button><a href="home.html" style="color: white; text-decoration: none;">Back</a></button>
+    </header>
+
+    <section class="category">
+        <h2>Historical Monuments</h2>
+        <div class="location">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/8/81/India_Gate%2C_New_Delhi_at_Night.jpg" alt="India Gate">
+            <h3>1. India Gate</h3>
+            <p>Details: A war memorial dedicated to the soldiers who fought in World War I, surrounded by lush gardens.</p>
+        </div>
+        <div class="location">
+            <img src=https://cdn-ijnhp.nitrocdn.com/pywIAllcUPgoWDXtkiXtBgvTOSromKIg/assets/images/optimized/rev-5794eaa/www.jaypeehotels.com/blog/wp-content/uploads/2023/11/Blog-5.jpg alt="Qutub Minar">
+            <h3>2. Qutub Minar</h3>
+            <p>Details: The tallest brick minaret in the world, a UNESCO World Heritage Site showcasing Indo-Islamic architecture.</p>
+        </div>
+    </section>
+
+    <section class="category">
+        <h2>Cultural Heritage</h2>
+        <div class="location">
+            <img src=https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQMFwW5V1pgYECIMUcYKTiXreS8OZCASruW4A&s alt="Humayun's Tomb">
+            <h3>1. Humayun's Tomb</h3>
+            <p>Details: A UNESCO World Heritage Site, this magnificent garden tomb is a precursor to the Taj Mahal.</p>
+        </div>
+        <div class="location">
+            <img src=https://www.millenniumpost.in/h-upload/2024/02/18/1500x900_763499-red-fort.jpg alt="Red Fort">
+            <h3>2. Red Fort</h3>
+            <p>Details: A symbol of India's rich history, this fort is famous for its stunning Mughal architecture.</p>
+        </div>
+    </section>
+
+    <section class="category">
+        <h2>Additional Sites</h2>
+        <div class="location">
+            <img src=https://img.freepik.com/premium-photo/night-view-lotus-temple_847439-21956.jpg alt="Lotus Temple">
+            <h3>1. Lotus Temple</h3>
+            <p>Details: A Bahá'í House of Worship, known for its flower-like architecture and serene environment.</p>
+        </div>
+        <div class="location">
+<img src="data:image/jpeg;base64,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" alt="jama masjid">
+  <h3>2 . Jama masjid</h3>
+  <p>Details: A symbolic gesture of Islamic power across India, well into the colonial era. </p>
+        </div>
+<div class="book-now">
+        <button onclick="window.location.href='booking.html'">Book Now</button>
+    </div>
+
+    <footer>
+        <p>Additional information:</p>
+        <ul>
+            <li>Best time to visit: October to March</li>
+            <li>Language: Hindi, English, Urdu</li>
+            <li>Cuisine: North Indian cuisine, Mughlai dishes</li>
+            <li>Must-try dishes: Biryani, Chole Bhature, Parathas</li>
+        </ul>
+    </footer>
+</body>
+</html>
